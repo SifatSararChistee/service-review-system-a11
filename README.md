@@ -92,3 +92,8 @@ Follow these steps to run the project on your local machine:
    git clone https://github.com/SifatSararChistee/service-review-system-a11.git
    cd trustify
    ```
+2. **Commands**:
+   ```bash
+   npm install
+   npm run dev
+   ```

@@ -27,7 +27,7 @@ const Banner = () => {
             <img
               src={bannerImg1}
               alt="Banner 1"
-              className="w-full max-h-[600px] object-cover rounded-lg"
+              className="w-full max-h-[500px] object-cover rounded-lg"
             />
             <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
               <motion.h2
@@ -46,7 +46,7 @@ const Banner = () => {
             <img
               src={bannerImg2}
               alt="Banner 2"
-              className="w-full max-h-[600px] object-cover rounded-lg"
+              className="w-full max-h-[500px] object-cover rounded-lg"
             />
             <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
               <motion.h2
@@ -65,7 +65,7 @@ const Banner = () => {
             <img
               src={bannerImg3}
               alt="Banner 3"
-              className="w-full max-h-[600px] object-cover rounded-lg"
+              className="w-full max-h-[500px] object-cover rounded-lg"
             />
             <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
               <motion.h2

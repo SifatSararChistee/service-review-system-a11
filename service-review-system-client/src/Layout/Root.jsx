@@ -9,10 +9,10 @@ const Root = () => {
            <section className='bg-gradient-to-r from-sky-300 via-sky-400 to-sky-500 w-full sticky top-0 z-10'>
            <Navbar></Navbar>
             </section>
-            <section className='max-w-screen-2xl mx-auto'>
+            <section>
             <Outlet></Outlet>
             </section>
-           <section>
+           <section className='w-full bg-gray-200'>
            <Footer></Footer>
            </section>
         </div>

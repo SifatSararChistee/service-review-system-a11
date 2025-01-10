@@ -4,7 +4,7 @@ import logo from '../../assets/icons8-review-96.png';
 const Footer = () => {
     return (
       <div>
-        <footer className="footer text-base-content p-10">
+        <footer className="footer text-base-content p-10 max-w-screen-2xl mx-auto">
   <aside>
       
     <p className='lg:text-2xl font-bold text-fuchsia-500 flex items-center'>

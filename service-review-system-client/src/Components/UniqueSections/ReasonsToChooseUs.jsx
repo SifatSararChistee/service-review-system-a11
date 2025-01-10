@@ -11,7 +11,7 @@ AOS.init();
 
 const ReasonsToChooseUs = () => {
   return (
-    <section className="bg-base-100 py-12 px-6">
+    <section className="bg-base-100 py-12 px-6 my-10">
       <div className="max-w-7xl mx-auto text-center">
         <motion.h2
           className="text-4xl font-bold text-primary mb-6"

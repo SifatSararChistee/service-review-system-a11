@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const ServicesSection = () => {
   return (
-    <section className="bg-gray-100 py-16 px-8">
+    <section className="py-16 px-8 w-11/12 mx-auto m-10">
       <div className="container mx-auto flex flex-col lg:flex-row items-center">
         {/* Left Side: Text and Button */}
         <div className="lg:w-1/2 text-center lg:text-left space-y-8 lg:space-y-10">
@@ -32,7 +32,7 @@ const ServicesSection = () => {
             transition={{ duration: 1, delay: 0.5 }}
           >
             <Link to={'/add-service'}>
-              <button className="btn btn-primary hover:bg-primary-focus transition-all duration-300">
+              <button className="btn btn-primary hover:bg-primary-focus transition-all duration-300 w-1/3">
                 Join Us
               </button>
             </Link>

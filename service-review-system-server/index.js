@@ -80,16 +80,32 @@ async function run() {
 
     //get all services data and also get category based service, search services
     app.get("/services", async (req, res) => {
-      const { filter, search } = req.query;
+      const { filter, search, sort } = req.query;
       let query = {};
 
+      // Filtering
       if (filter) {
         query.category = filter;
       }
+
+      // Searching
       if (search) {
         query.serviceTitle = { $regex: search, $options: "i" };
       }
-      const result = await serviceCollection.find(query).toArray();
+
+      // Sorting logic (only for price)
+      let sortOption = {};
+      if (sort === "asc") {
+        sortOption.price = 1; // Ascending order
+      } else if (sort === "desc") {
+        sortOption.price = -1; // Descending order
+      }
+
+      // Fetch data with filter, search, and sort by price
+      const result = await serviceCollection
+        .find(query)
+        .sort(sortOption)
+        .toArray();
       res.send(result);
     });
 

@@ -163,7 +163,7 @@ const ServiceDetailsPage = () => {
         </div>
     
         {/* Review Form */}
-        <div className="w-full lg:w-1/3 bg-white p-6 rounded-lg shadow-md sticky top-5 z-30">
+        <div className="w-full lg:w-1/3 bg-white p-6 rounded-lg shadow-md mt-8 h-screen">
             <h2 className="text-2xl font-semibold mb-4">Add Review</h2>
             <form onSubmit={handleSubmit} className="space-y-4">
                 {/* Review Textarea */}

@@ -6,9 +6,10 @@ const AllServicePage = () => {
     const [services, setServices]= useState([])
     const [filter, setFilter]= useState('')
     const [search, setSearch]= useState('')
+    const [sort , setSort]=useState('')
     useEffect(()=>{
       const fetchAllServices = async ()=>{
-        const {data} = await axios.get(`https://b10a11-server-side-sifat-sarar-chistee.vercel.app/services?filter=${filter}&search=${search}`,
+        const {data} = await axios.get(`https://b10a11-server-side-sifat-sarar-chistee.vercel.app/services?filter=${filter}&search=${search}&sort=${sort}`,
           {
             withCredentials: true,  // Include cookies or credentials in the request
           }
@@ -16,7 +17,7 @@ const AllServicePage = () => {
         setServices(data)
       }
       fetchAllServices()
-    },[filter, search])
+    },[filter, search, sort])
     
     return (
         <div>
@@ -44,15 +45,28 @@ const AllServicePage = () => {
 
                     {/* Search Form */}
             <div className='w-1/2'>
-      <form className="flex items-center gap-2 my-4 mx-auto">
-        <input
-          type="text"
-          placeholder="Search for service tittle..."
-          aria-label="Search for service tittle..."
-          onChange={(e) => setSearch(e.target.value)}
-          className="w-full p-2 border-2 rounded focus:outline-none focus:border-fuchsia-700"
-        />
-      </form>
+                <form className="flex items-center gap-2 my-4 mx-auto">
+                    <input
+                        type="text"
+                        placeholder="Search for service tittle..."
+                        aria-label="Search for service tittle..."
+                        onChange={(e) => setSearch(e.target.value)}
+                        className="w-full p-2 border-2 rounded focus:outline-none focus:border-fuchsia-700"
+                    />
+                </form>
+            </div>
+
+            <div className='text-center'>
+              <select
+              name='sorted'
+              id='sorted'
+              className='border-2 p-4 rounded-lg focus:border-fuchsia-700'
+              onChange={(e)=>setSort(e.target.value)}
+              >
+                <option value=''>Sort By Price</option>
+                <option value='asc'>Ascending</option>
+                <option value='desc'>Descending</option>
+              </select>
             </div>
             </div>
             

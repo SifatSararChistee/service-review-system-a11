@@ -194,7 +194,7 @@ useEffect(() => {
 
   </div>
 
-  <button className="btn bg-blue-500 w-full" onClick={() => handleSave(_id)}>
+  <button className="btn bg-blue-500 text-white w-full" onClick={() => handleSave(_id)}>
     Save
   </button>
 </Modal>

@@ -2,12 +2,19 @@ import React, { useContext } from 'react';
 import logo from '../../assets/icons8-review-96.png';
 import { AuthContext } from '../../Provider/AuthProvider';
 import { NavLink } from 'react-router-dom';
+import toast from 'react-hot-toast';
 
 const Footer = () => {
   const{user}=useContext(AuthContext)
+  const subscribeBtn=e=>{
+    e.preventDefault()
+    toast.success('You are subscribed to our newsletter')
+  }
+    
+  
     return (
       <div>
-        <footer className="footer text-base-content p-10 max-w-screen-2xl mx-auto">
+        <footer className="footer text-base-content p-10 max-w-screen-2xl mx-auto flex flex-col lg:flex-row md:flex-row items-center justify-around">
   <aside>
       
     <p className='lg:text-2xl font-bold text-black flex items-center'>
@@ -23,19 +30,23 @@ const Footer = () => {
       {user ? <p  className="link link-hover"> <NavLink to={'/my-services'} className={'mr-4 hover:text-blue-700 transition-colors duration-300'}>My Services</NavLink></p> : ''}
       {user ? <p  className="link link-hover"><NavLink to={'/my-reviews'} className={'hover:text-blue-700 transition-colors duration-300'}>My Reviews</NavLink></p> : ''}
   </div>
-  <nav>
-    <h6 className="footer-title">Company</h6>
-    <a className="link link-hover">About us</a>
-    <a className="link link-hover">Contact</a>
-    <a className="link link-hover">Jobs</a>
-    <a className="link link-hover">Press kit</a>
-  </nav>
-  <nav>
-    <h6 className="footer-title">Legal</h6>
-    <a className="link link-hover">Terms of use</a>
-    <a className="link link-hover">Privacy policy</a>
-    <a className="link link-hover">Cookie policy</a>
-  </nav>
+  <div>
+  <form>
+    <h6 className="footer-title">Newsletter</h6>
+    <fieldset className="form-control w-80">
+      <label className="label">
+        <span className="label-text">Enter your email address</span>
+      </label>
+      <div className="join">
+        <input
+          type="text"
+          placeholder="username@site.com"
+          className="input input-bordered join-item" />
+        <button onClick={subscribeBtn} className="btn bg-blue-500 text-white join-item">Subscribe</button>
+      </div>
+    </fieldset>
+  </form>
+  </div>
 </footer>
 
 <footer className="footer footer-center bg-base-300 text-base-content p-4">

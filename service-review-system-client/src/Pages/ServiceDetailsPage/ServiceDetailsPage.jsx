@@ -153,7 +153,7 @@ const ServiceDetailsPage = () => {
             </div>
     
             <div className='p-7'>
-                <h1 className='text-3xl font-bold my-5'>Reviews</h1>
+                <h1 className='text-3xl font-bold my-5 text-blue-500'>Customer Reviews</h1>
                 <div className='space-y-5'>
                     {reviews.map((review, i) => (
                         <ReviewCard key={i} review={review}></ReviewCard>
@@ -164,7 +164,7 @@ const ServiceDetailsPage = () => {
     
         {/* Review Form */}
         <div className="w-full lg:w-1/3 bg-white p-6 rounded-lg shadow-md mt-8 h-screen">
-            <h2 className="text-2xl font-semibold mb-4">Add Review</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-blue-500">Add Review</h2>
             <form onSubmit={handleSubmit} className="space-y-4">
                 {/* Review Textarea */}
                 <div>

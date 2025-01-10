@@ -58,7 +58,7 @@ const StatsSection = () => {
           {stats.map((stat, index) => (
             <motion.div
               key={index}
-              className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center hover:shadow-xl transition-shadow duration-300"
+              className="bg-white w-11/12 mx-auto lg:w-full md:w-full shadow-md rounded-lg p-6 flex flex-col items-center hover:shadow-xl transition-shadow duration-300"
               whileHover={{ scale: 1.05 }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -69,7 +69,7 @@ const StatsSection = () => {
               <CountUp
                 start={0}
                 end={stat.count}
-                duration={2.5}
+                duration={10}
                 className="text-4xl font-bold text-blue-500"
               />
             </motion.div>

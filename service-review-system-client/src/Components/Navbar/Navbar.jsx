@@ -14,11 +14,11 @@ const Navbar = () => {
 
   const links = (
     <>
-      <li><NavLink to={'/'} className={'mr-4 hover:text-blue-700 transition-colors duration-300'}>Home</NavLink></li>
-      <li><NavLink to={'/all-services'} className={'mr-4 hover:text-blue-700 transition-colors duration-300'}>Services</NavLink></li>
-      {user ? <li><NavLink to={'/add-service'} className={'mr-4 hover:text-blue-700 transition-colors duration-300'}>Add Service</NavLink></li> : ''}
-      {user ? <li><NavLink to={'/my-services'} className={'mr-4 hover:text-blue-700 transition-colors duration-300'}>My Services</NavLink></li> : ''}
-      {user ? <li><NavLink to={'/my-reviews'} className={'hover:text-blue-700 transition-colors duration-300'}>My Reviews</NavLink></li> : ''}
+      <li><NavLink to={'/'} className={'mr-4 hover:text-white transition-colors duration-300'}>Home</NavLink></li>
+      <li><NavLink to={'/all-services'} className={'mr-4 hover:text-white transition-colors duration-300'}>Services</NavLink></li>
+      {user ? <li><NavLink to={'/add-service'} className={'mr-4 hover:text-white transition-colors duration-300'}>Add Service</NavLink></li> : ''}
+      {user ? <li><NavLink to={'/my-services'} className={'mr-4 hover:text-white transition-colors duration-300'}>My Services</NavLink></li> : ''}
+      {user ? <li><NavLink to={'/my-reviews'} className={'hover:text-white transition-colors duration-300'}>My Reviews</NavLink></li> : ''}
     </>
   );
 
@@ -27,7 +27,7 @@ const Navbar = () => {
       <div className="navbar-start flex items-center">
         <div className="dropdown z-30">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden hover:bg-transparent focus:outline-none">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
             </svg>
           </div>
@@ -36,14 +36,14 @@ const Navbar = () => {
           </ul>
         </div>
         <Link to={"/"} className="flex items-center">
-          <img srcSet={logo} className="w-16 hidden lg:block md:block mr-2" alt="Trustify Logo" />
-          <button className="btn btn-ghost lg:text-2xl font-bold text-white hover:text-blue-600 transition-colors duration-300">
+          <img srcSet={logo} className="w-16 hidden lg:block md:block" alt="Trustify Logo" />
+          <button className="btn btn-ghost lg:text-2xl font-bold text-black hover:text-white transition-colors duration-300">
             Trustify
           </button>
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 text-white">{links}</ul>
+        <ul className="menu menu-horizontal px-1 text-black text-lg font-semibold">{links}</ul>
       </div>
       <div className="navbar-end flex items-center">
         {loading ? (

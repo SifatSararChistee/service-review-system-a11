@@ -14,7 +14,7 @@ const MyReviewPage = () => {
 
     return (
         <div>
-            <h1 className='text-3xl text-center font-bold mt-6 text-primary'>My Reviews</h1>
+            <h1 className='text-3xl text-center font-bold my-6 text-primary'>My Reviews</h1>
             <div className='w-2/3 mx-auto space-y-5'>
                 {
                     reviews.map(review=><ReviewCard key={review._id} review={review} reviews={reviews} setReviews={setReviews}></ReviewCard>)

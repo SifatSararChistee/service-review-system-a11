@@ -152,7 +152,7 @@ const ServiceDetailsPage = () => {
                 </div>
             </div>
     
-            <div className='p-7'>
+            <div className='lg:p-5 md:p-5 lg:w-full md:w-full w-11/12'>
                 <h1 className='text-3xl font-bold my-5 text-blue-500'>Customer Reviews</h1>
                 <div className='space-y-5'>
                     {reviews.map((review, i) => (

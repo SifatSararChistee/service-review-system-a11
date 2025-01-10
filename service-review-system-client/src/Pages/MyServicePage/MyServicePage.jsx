@@ -53,7 +53,7 @@ const MyServicePage = () => {
       ) : services.length === 0 ? (
         <div className="text-center text-2xl">No services found... <br />You have not added any service</div>
       ) : (
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center w-2/3 mx-auto">
           {services.map((service) => (
             <ServiceTable
               key={service._id}

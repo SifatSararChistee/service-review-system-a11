@@ -73,9 +73,9 @@ const Navbar = () => {
                 Log Out
               </button>
             ) : (
-              <div>
+              <div className='flex items-center'>
                 <Link to={"/login"}>
-                  <button className="btn btn-success text-white transition-transform transform hover:scale-105 hover:text-gray-800">
+                  <button className="text-nowrap btn btn-success text-white transition-transform transform hover:scale-105 hover:text-gray-800">
                     Log In
                   </button>
                 </Link>

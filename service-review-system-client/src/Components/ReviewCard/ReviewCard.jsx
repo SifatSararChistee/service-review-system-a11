@@ -119,7 +119,7 @@ useEffect(() => {
 
     
     return (
-<div className="card bg-white shadow-xl w-11/12">
+<div className="card bg-white shadow-xl w-full">
       <div className="card-body bg-white">
       <div className='flex items-center w-[500px] gap-5'>
         <div>

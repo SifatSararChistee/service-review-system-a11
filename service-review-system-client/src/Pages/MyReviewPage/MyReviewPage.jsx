@@ -19,7 +19,7 @@ const MyReviewPage = () => {
         <div className="text-center">Loading Reviews...</div>
       ) : reviews.length === 0 ? (
         <div className="text-center text-2xl">No Reviews found... <br />You have not added any review</div>
-      ):(<div className='w-2/3 mx-auto space-y-5'>
+      ):(<div className='w-11/12 mx-auto space-y-5'>
         {
             reviews.map(review=><ReviewCard key={review._id} review={review} reviews={reviews} setReviews={setReviews}></ReviewCard>)
         }

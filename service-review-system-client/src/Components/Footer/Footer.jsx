@@ -14,7 +14,7 @@ const Footer = () => {
   
     return (
       <div>
-        <footer className="footer text-base-content p-10 max-w-screen-2xl mx-auto flex flex-col lg:flex-row md:flex-row items-center justify-around">
+        <footer className="footer text-black p-10 max-w-screen-2xl mx-auto flex flex-col lg:flex-row md:flex-row items-center justify-around">
   <aside>
       
     <p className='lg:text-2xl font-bold text-black flex items-center'>
@@ -23,7 +23,7 @@ const Footer = () => {
     </p>
     <p>A platform designed to allow users to review and <br /> interact with services listed by others</p>
   </aside>
-  <div>
+  <div className='text-lg'>
   <p  className="link link-hover"><NavLink to={'/'} className={'mr-4 hover:text-blue-700 transition-colors duration-300'}>Home</NavLink></p>
       <p  className="link link-hover"><NavLink to={'/all-services'} className={'mr-4 hover:text-blue-700 transition-colors duration-300'}>Services</NavLink></p>
       {user ? <p  className="link link-hover"><NavLink to={'/add-service'} className={'mr-4 hover:text-blue-700 transition-colors duration-300'}>Add Service</NavLink></p> : ''}
@@ -49,7 +49,7 @@ const Footer = () => {
   </div>
 </footer>
 
-<footer className="footer footer-center bg-base-300 text-base-content p-4">
+<footer className="footer footer-center bg-gradient-to-r from-sky-300 via-sky-400 to-sky-500 text-black p-4">
   <aside>
     <p>Copyright © {new Date().getFullYear()} - All right reserved by Trustify</p>
   </aside>

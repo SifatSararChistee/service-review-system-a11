@@ -12,7 +12,7 @@ const Root = () => {
             <section className='flex-grow'>
             <Outlet></Outlet>
             </section>
-           <section className='w-full bg-gray-200'>
+           <section className='w-full bg-gradient-to-r from-sky-300 via-sky-400 to-sky-500'>
            <Footer></Footer>
            </section>
         </div>

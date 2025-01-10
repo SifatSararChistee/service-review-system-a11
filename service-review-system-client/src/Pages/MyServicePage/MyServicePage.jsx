@@ -51,7 +51,7 @@ const MyServicePage = () => {
       {loading ? (
         <div className="text-center">Loading services...</div>
       ) : services.length === 0 ? (
-        <div className="text-center">No services found.</div>
+        <div className="text-center text-2xl">No services found... <br />You have not added any service</div>
       ) : (
         <div className="flex flex-col items-center">
           {services.map((service) => (

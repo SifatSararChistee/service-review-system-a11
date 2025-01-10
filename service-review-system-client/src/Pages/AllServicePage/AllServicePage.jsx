@@ -21,7 +21,7 @@ const AllServicePage = () => {
     
     return (
         <div>
-            <h1 className='text-3xl font-bold text-center my-5 text-primary'>All services </h1>
+            <h1 className='text-3xl font-bold text-center my-5 text-blue-500'>All services </h1>
 
             <div className='flex items-center justify-center my-8 gap-5'>
             {/* category filter */}

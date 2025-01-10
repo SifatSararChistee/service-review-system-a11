@@ -34,7 +34,7 @@ const MyServicePage = () => {
 
   return (
     <div className="">
-      <h1 className="text-3xl text-center font-bold my-8 text-primary">My Services</h1>
+      <h1 className="text-3xl text-center font-bold my-8 text-blue-500">My Services</h1>
 
       {/* Search Form */}
       <form className="flex items-center gap-2 my-4 w-2/4 mx-auto">

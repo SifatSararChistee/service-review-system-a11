@@ -48,7 +48,7 @@ const MeetPartners = () => {
   return (
     <section className="py-10 bg-base-200 text-center px-10 mt-10">
       <motion.h2
-        className="text-4xl font-semibold mb-8 text-primary"
+        className="text-4xl font-semibold mb-8 text-blue-500"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
@@ -59,7 +59,7 @@ const MeetPartners = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {partners.map((partner, index) => (
           <motion.div
-            className="card bg-white shadow-xl hover:shadow-2xl transition-shadow duration-300 p-6 rounded-lg"
+            className="card bg-white shadow-xl hover:shadow-2xl transition-shadow duration-300 rounded-lg"
             key={index}
             data-aos="fade-up"
             data-aos-duration="800"
@@ -72,7 +72,7 @@ const MeetPartners = () => {
               />
             </figure>
             <div className="card-body flex flex-col items-center">
-              <h3 className="card-title text-xl font-semibold">{partner.name}</h3>
+              <h3 className="card-title text-xl font-semibold text-blue-500">{partner.name}</h3>
               <p className="text-sm text-gray-600 mt-2">{partner.description}</p>
             </div>
           </motion.div>

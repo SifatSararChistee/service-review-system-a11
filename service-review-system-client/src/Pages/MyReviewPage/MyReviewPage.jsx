@@ -14,7 +14,7 @@ const MyReviewPage = () => {
 
     return (
         <div>
-            <h1 className='text-3xl text-center font-bold my-6 text-primary'>My Reviews</h1>
+            <h1 className='text-3xl text-center font-bold my-6 text-blue-500'>My Reviews</h1>
             {loading ? (
         <div className="text-center">Loading Reviews...</div>
       ) : reviews.length === 0 ? (

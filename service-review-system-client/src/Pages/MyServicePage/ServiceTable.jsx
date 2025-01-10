@@ -126,7 +126,7 @@ const ServiceTable = ({ service, services, setServices }) => {
               <td>${price}</td>
               <td>
                 <button
-                  className="btn btn-primary btn-sm mr-2"
+                  className="btn bg-blue-500 text-white btn-sm mr-2"
                   onClick={() => handleUpdate(service)}
                 >
                   Update
@@ -229,7 +229,7 @@ const ServiceTable = ({ service, services, setServices }) => {
       />
 
       {/* Save Button */}
-      <button className="btn btn-primary w-full" onClick={()=>handleSave(_id)}>
+      <button className="btn bg-blue-500 text-white w-full" onClick={()=>handleSave(_id)}>
         Save
       </button>
     </Modal>

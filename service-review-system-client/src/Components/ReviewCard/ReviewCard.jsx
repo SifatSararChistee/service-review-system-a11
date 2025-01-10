@@ -158,7 +158,7 @@ useEffect(() => {
       </div>
 { pathname==='/my-reviews' ?
         <div className='text-right p-8'>
-        <button className="btn btn-primary btn-sm mr-2" onClick={() => handleUpdate(review)}>Update</button>
+        <button className="btn bg-blue-500 text-white btn-sm mr-2" onClick={() => handleUpdate(review)}>Update</button>
         <button className="btn btn-error btn-sm"onClick={() => handleDelete(review)}>Delete</button>
         </div>
         :''
@@ -194,7 +194,7 @@ useEffect(() => {
 
   </div>
 
-  <button className="btn btn-primary w-full" onClick={() => handleSave(_id)}>
+  <button className="btn bg-blue-500 w-full" onClick={() => handleSave(_id)}>
     Save
   </button>
 </Modal>

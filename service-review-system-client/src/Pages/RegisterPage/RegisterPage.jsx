@@ -109,7 +109,7 @@ const RegisterPage = () => {
           {error && <p style={{ color: "red" }}>{error}</p>}
         </div>
         <div className="form-control mt-6">
-          <button className="btn btn-primary text-lg">Register</button>
+          <button className="btn bg-blue-500 text-white text-lg">Register</button>
         </div>
         <p className="text-center">Or</p>
         <div className="form-control">

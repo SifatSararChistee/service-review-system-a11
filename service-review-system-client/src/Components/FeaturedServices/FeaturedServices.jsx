@@ -14,7 +14,7 @@ const FeaturedServices = () => {
     },[])
     return (
         <div className='w-11/12 mx-auto'>
-            <h1 className='text-4xl font-bold my-8 text-center text-primary'>Featured Services</h1>
+            <h1 className='text-4xl font-bold my-8 text-center text-blue-500'>Featured Services</h1>
             <div className='grid grid-cols-1 place-items-center lg:grid-cols-4 md:grid-cols-3 gap-8'>
                 {
                     featuredServices.map(service =><ServiceCard key={service._id} service={service}></ServiceCard>)

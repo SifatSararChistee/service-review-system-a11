@@ -44,7 +44,7 @@ const StatsSection = () => {
     return (
       <section className="py-10 bg-gray-100">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-8 text-primary">Loading...</h2>
+          <h2 className="text-3xl font-bold mb-8 text-blue-500">Loading...</h2>
         </div>
       </section>
     );
@@ -53,7 +53,7 @@ const StatsSection = () => {
   return (
     <section className="py-5 bg-gray-100 my-10">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-8 text-primary">Platform Statistics</h2>
+        <h2 className="text-3xl font-bold mb-8 text-blue-500">Platform Statistics</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {stats.map((stat, index) => (
             <motion.div
@@ -70,7 +70,7 @@ const StatsSection = () => {
                 start={0}
                 end={stat.count}
                 duration={2.5}
-                className="text-4xl font-bold text-primary"
+                className="text-4xl font-bold text-blue-500"
               />
             </motion.div>
           ))}

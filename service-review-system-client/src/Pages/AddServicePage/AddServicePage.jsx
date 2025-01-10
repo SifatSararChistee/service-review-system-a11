@@ -51,7 +51,7 @@ const AddServicePage = () => {
             onSubmit={handleSubmit} 
             className="max-w-2xl mx-auto p-6 bg-white shadow-lg rounded-lg space-y-4"
         >
-            <h1 className='text-3xl font-bold text-center my-5 text-primary'>Add Your Service </h1>
+            <h1 className='text-3xl font-bold text-center my-5 text-blue-500'>Add Your Service </h1>
             <div className="form-control">
                 <label className="label">
                     <span className="label-text">Service Image URL:</span>
@@ -158,7 +158,7 @@ const AddServicePage = () => {
 
             <button 
                 type="submit" 
-                className="btn btn-primary w-full"
+                className="btn bg-blue-500 text-white w-full"
             >
                 Add Service
             </button>

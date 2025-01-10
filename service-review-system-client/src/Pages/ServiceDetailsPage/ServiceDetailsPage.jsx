@@ -201,7 +201,7 @@ const ServiceDetailsPage = () => {
     
                 {/* Add Review Button */}
                 <div>
-                    <button type="submit" className="btn btn-primary w-full">
+                    <button type="submit" className="btn bg-blue-500 text-white w-full">
                         Add Review
                     </button>
                 </div>

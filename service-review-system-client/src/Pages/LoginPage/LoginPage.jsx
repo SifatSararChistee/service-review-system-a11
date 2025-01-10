@@ -72,7 +72,7 @@ const LoginPage = () => {
           </label>
         </div>
         <div className="form-control mt-6">
-          <button className="btn btn-primary text-lg">Login</button>
+          <button className="btn bg-blue-500 text-white text-lg">Login</button>
         </div>
         <p className="text-center">Or</p>
         <div className="form-control">

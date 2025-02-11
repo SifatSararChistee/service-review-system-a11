@@ -1,11 +1,10 @@
 import React, { useContext } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { AuthContext } from '../../Provider/AuthProvider';
-import Loading from '../Loading/Loading';
 import logo from '../../../src/assets/icons8-review-96.png';
 
 const Navbar = () => {
-  const { user, logOut, setUser, loading } = useContext(AuthContext);
+  const { user, logOut, setUser } = useContext(AuthContext);
 
   const handleLogOut = () => {
     logOut();
@@ -16,10 +15,10 @@ const Navbar = () => {
     <>
       <li><NavLink to={'/'} className={'mr-4 hover:text-white transition-colors duration-300'}>Home</NavLink></li>
       <li><NavLink to={'/all-services'} className={'mr-4 hover:text-white transition-colors duration-300'}>Services</NavLink></li>
-      <li><NavLink to={'/contact'} className={'mr-4 hover:text-white transition-colors duration-300'}>Contact Us</NavLink></li>
       {user ? <li><NavLink to={'/add-service'} className={'mr-4 hover:text-white transition-colors duration-300'}>Add Service</NavLink></li> : ''}
       {user ? <li><NavLink to={'/my-services'} className={'mr-4 hover:text-white transition-colors duration-300'}>My Services</NavLink></li> : ''}
       {user ? <li><NavLink to={'/my-reviews'} className={'hover:text-white transition-colors duration-300'}>My Reviews</NavLink></li> : ''}
+      <li><NavLink to={'/contact'} className={'mr-4 hover:text-white transition-colors duration-300'}>Contact Us</NavLink></li>
     </>
   );
 

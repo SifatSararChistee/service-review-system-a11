@@ -16,6 +16,7 @@ const Navbar = () => {
     <>
       <li><NavLink to={'/'} className={'mr-4 hover:text-white transition-colors duration-300'}>Home</NavLink></li>
       <li><NavLink to={'/all-services'} className={'mr-4 hover:text-white transition-colors duration-300'}>Services</NavLink></li>
+      <li><NavLink to={'/contact'} className={'mr-4 hover:text-white transition-colors duration-300'}>Contact Us</NavLink></li>
       {user ? <li><NavLink to={'/add-service'} className={'mr-4 hover:text-white transition-colors duration-300'}>Add Service</NavLink></li> : ''}
       {user ? <li><NavLink to={'/my-services'} className={'mr-4 hover:text-white transition-colors duration-300'}>My Services</NavLink></li> : ''}
       {user ? <li><NavLink to={'/my-reviews'} className={'hover:text-white transition-colors duration-300'}>My Reviews</NavLink></li> : ''}

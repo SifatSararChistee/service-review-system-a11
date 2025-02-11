@@ -11,6 +11,7 @@ import ServiceDetailsPage from "../Pages/ServiceDetailsPage/ServiceDetailsPage";
 import PrivateRoute from "./PrivateRoute";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import DynamicTittle from "../Components/DynamicTittle/DynamicTittle";
+import ContactPage from "../Pages/ContactPage/ContactPage";
 
 const router = createBrowserRouter([
     {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
         {
           path: "/all-services",
           element:<AllServicePage></AllServicePage>,
+        },
+        {
+          path: "/contact",
+          element:<ContactPage></ContactPage>,
         },
         {
           path: "/add-service",

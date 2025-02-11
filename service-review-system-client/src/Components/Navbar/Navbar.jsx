@@ -46,9 +46,7 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1 text-black text-lg font-semibold">{links}</ul>
       </div>
       <div className="navbar-end flex items-center">
-        {loading ? (
-          <Loading />
-        ) : (
+        
           <>
             {user && user?.email ? (
               <div className="mr-3 relative group">
@@ -88,7 +86,7 @@ const Navbar = () => {
               </div>
             )}
           </>
-        )}
+        
       </div>
     </div>
   );

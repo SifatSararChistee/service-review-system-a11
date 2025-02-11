@@ -1,11 +1,13 @@
 import { Mail, User, MessageSquare } from "lucide-react";
 import Lottie from "lottie-react";
 import contact from "../../assets/contactus.json";
+import { useMemo } from "react";
 
 const ContactPage = () => {
+    const options = useMemo(() => ({ animationData: contact, loop: true }), []);
     return (
         <div className="flex justify-center items-center p-6">
-        <div className="w-full max-w-lg h-[500px] shadow-lg rounded-2xl p-6">
+        <div className="w-full max-w-lg h-[500px] shadow-md rounded-2xl p-6">
           <h2 className="text-3xl text-center font-bold my-6 text-blue-500">Contact Us</h2>
           <form className="mt-6 space-y-4">
             <div className="flex flex-col">
@@ -32,7 +34,7 @@ const ContactPage = () => {
           </form>
         </div>
         <div>
-        <Lottie className='h-[500px] hidden lg:block' animationData={contact}  />
+        <Lottie className="hidden h-[500px] lg:block md:block" {...options} />
         </div>
       </div>
     );

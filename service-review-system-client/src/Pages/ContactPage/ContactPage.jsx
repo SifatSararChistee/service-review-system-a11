@@ -4,7 +4,7 @@ const ContactPage = () => {
     return (
         <div className="flex justify-center items-center bg-gray-100 p-6">
         <div className="w-full max-w-lg bg-white shadow-lg rounded-2xl p-6">
-          <h2 className="text-2xl font-bold text-center text-gray-700">Contact Us</h2>
+          <h2 className="text-3xl text-center font-bold my-6 text-blue-500">Contact Us</h2>
           <form className="mt-6 space-y-4">
             <div className="flex flex-col">
               <label className="flex items-center mb-1 text-gray-700" htmlFor="name">

@@ -26,6 +26,7 @@ const Footer = () => {
   <div className='text-lg'>
   <p  className="link link-hover"><NavLink to={'/'} className={'mr-4 hover:text-blue-700 transition-colors duration-300'}>Home</NavLink></p>
       <p  className="link link-hover"><NavLink to={'/all-services'} className={'mr-4 hover:text-blue-700 transition-colors duration-300'}>Services</NavLink></p>
+      <p  className="link link-hover"><NavLink to={'/contact'} className={'mr-4 hover:text-blue-700 transition-colors duration-300'}>Contact Us</NavLink></p>
       {user ? <p  className="link link-hover"><NavLink to={'/add-service'} className={'mr-4 hover:text-blue-700 transition-colors duration-300'}>Add Service</NavLink></p> : ''}
       {user ? <p  className="link link-hover"> <NavLink to={'/my-services'} className={'mr-4 hover:text-blue-700 transition-colors duration-300'}>My Services</NavLink></p> : ''}
       {user ? <p  className="link link-hover"><NavLink to={'/my-reviews'} className={'hover:text-blue-700 transition-colors duration-300'}>My Reviews</NavLink></p> : ''}

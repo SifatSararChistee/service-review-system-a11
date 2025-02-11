@@ -1,9 +1,11 @@
 import { Mail, User, MessageSquare } from "lucide-react";
+import Lottie from "lottie-react";
+import contact from "../../assets/contactus.json";
 
 const ContactPage = () => {
     return (
-        <div className="flex justify-center items-center bg-gray-100 p-6">
-        <div className="w-full max-w-lg bg-white shadow-lg rounded-2xl p-6">
+        <div className="flex justify-center items-center p-6">
+        <div className="w-full max-w-lg h-[500px] shadow-lg rounded-2xl p-6">
           <h2 className="text-3xl text-center font-bold my-6 text-blue-500">Contact Us</h2>
           <form className="mt-6 space-y-4">
             <div className="flex flex-col">
@@ -28,6 +30,9 @@ const ContactPage = () => {
               <button className="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition">Send Message</button>
             </div>
           </form>
+        </div>
+        <div>
+        <Lottie className='h-[500px] hidden lg:block' animationData={contact}  />
         </div>
       </div>
     );
